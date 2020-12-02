@@ -92,7 +92,7 @@ contact:
 
     birth_date: random_birth_date
 
-    is_deceased: random_is_deceased_and_date
+    is_deceased: skip # constraint violation here
 
     deceased_date: skip # gets processed with is_deceased
   
@@ -225,20 +225,20 @@ payment_processor:
 
 
 # ======================= PCP ===============================
-
-pcp:
-
-  modify:
-
-    title: random_name
-    intro_text: random_name
-    page_text: random_name
-    donate_link_text: fixed_string_donate_now
-
-
+#
+#pcp:
+#
+#  modify:
+#
+#    title: random_name
+#    intro_text: random_name
+#    page_text: random_name
+#    donate_link_text: fixed_string_donate_now
+#
+#
 # ======================= PERSISTENT ============================
 
-persistent: truncate
+# persistent: truncate
 
 
 # ======================= RELATIONSHIP ============================

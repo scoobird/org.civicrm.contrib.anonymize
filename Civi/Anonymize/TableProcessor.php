@@ -67,10 +67,11 @@ class TableProcessor extends Processor {
    * easiest to just clear everything first.
    */
   private function configureClear() {
-    $this->clear = array_merge(
-        $this->tableConfig['clear'],
-        array_keys($this->tableConfig['modify'])
-    );
+//    $this->clear = array_merge(
+//        $this->tableConfig['clear'],
+//        array_keys($this->tableConfig['modify'])
+//    );
+			$this->clear = $this->tableConfig['clear'];
   }
 
   /**
